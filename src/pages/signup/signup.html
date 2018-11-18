@@ -1,0 +1,72 @@
+<!--
+  Generated template for the Signup page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+</ion-header>
+
+
+<ion-content padding class="page-signup no-scroll">
+  <div class="login-header">
+    <div class="top-logo">
+      <img src="assets/img/small-top-logo.png">
+    </div>
+    <div class="skip" (click)="skip()">
+        Skip
+    </div>
+  </div>
+  <div class="content">
+    <div class="title">
+      Sign up
+    </div>
+    <div class="line2right">
+      <div class="line-left"></div>
+      <div class="line-right"></div>
+    </div>
+  </div>
+  <ion-list class="clear-list">
+    <ion-item>
+      <ion-icon class="input-icon" ios="ios-person-outline" md="md-person" item-left></ion-icon>
+      <ion-label floating>User name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-icon class="input-icon" ios="ios-mail-outline" md="md-mail" item-left></ion-icon>
+      <ion-label floating>Email</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-icon class="input-icon" ios="ios-phone-portrait-outline" md="md-phone-portrait" item-left></ion-icon>
+      <ion-label floating>Mobile Number</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-icon class="input-icon" ios="ios-lock-outline" md="md-lock" item-left></ion-icon>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    <button class="login-button" ion-button round full (click)="register()">
+      Register
+    </button>
+  </ion-list>
+</ion-content>
+<ion-footer class="clear-gap">
+  <ion-toolbar color="light" no-border>
+    <p class="title">
+      Or Sign in with
+    </p>
+    <ion-buttons end>
+      <button ion-button clear icon-only>
+        <ion-icon name="facebook"></ion-icon>
+      </button>
+      <button ion-button clear icon-only>
+        <ion-icon name="twitter"></ion-icon>
+      </button>
+      <button ion-button clear icon-only>
+        <ion-icon name="google"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,28 @@
+<ion-menu [content]="content" id="ecom9">
+
+  <ion-header>
+  </ion-header>
+
+  <ion-content class="menu">
+    <ion-list class="menu-list">
+      <div *ngFor="let menuItem of menuItems;">
+        <button detail-none class="parent" ion-item (click)="toggleItems(menuItem)">
+          {{menuItem.name}}
+          <ion-icon *ngIf="menuItem.parentShow === 'null' || menuItem.parentShow === false" item-right name="add"></ion-icon>
+          <ion-icon *ngIf="menuItem.parentShow === true" item-right name="remove"></ion-icon>
+        </button>
+        <ion-list class="menu-child-list" *ngIf="menuItem.parentShow === true" class="menu-child">
+          <button detail-none class="child" ion-item *ngFor="let child of menuItem.children" (click)="categories(menuItem, child)">
+            {{child.name}}
+          </button>
+        </ion-list>
+      </div>
+      <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
