@@ -1,0 +1,20 @@
+{
+    "name": "farmstodoor",
+    "version": "1.0.0",
+    "description": "[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=quanganh%40aiti%2ecom%2evn&lc=VN&item_name=Ionic2%20Calendar&item_number=ionic2calendar&no_note=0&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest)",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@ionic-native/http": "^4.17.0",
+        "cordova-plugin-advanced-http": "^2.0.1"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-advanced-http": {}
+        }
+    }
+}
